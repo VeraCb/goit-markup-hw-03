@@ -1,0 +1,157 @@
+/* pentru a fi o modificare in text la atingere folosim selectorii dati: .elementx:hover{aici punem ce ne intereseaza x} */
+/* pentru ca sa avem o culoare in spate la text ,subliniat ,folosim: .test{color:x} pentru CSS si in html punem test in selectorul de clasa, 
+ex. <p class="paragraf1 test>"*/
+:root{
+    --brand-color:orange;
+    --dark-color:#2E2F42;
+    --text-font-family:"Roboto",sans-serif;
+}
+body{
+    color: #050505;
+    background-color: #c3c1c1;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.header-container{
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #ffffff);
+   
+   
+}
+.navigation-logo{
+    color: var(--dark-color);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 116.667%; 
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+}
+.navigation-logo:hover,
+.navigation-logo:focus{
+    color: var(--brand-color);
+}
+.logo-info{
+    color: var(--IRIS, #4D5AE5);
+    text-decoration: none;
+    
+}
+.logo-info:hover,
+.logo-info:focus{
+    color: var(--brand-color);
+
+}
+.ul-style{
+    list-style-type: none;
+}
+.navigation-link{
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%; 
+    letter-spacing: 0.32px;
+    text-decoration: none;
+}
+
+.navigation-link:hover,
+.navigation-link:focus{
+    color: var(--brand-color);
+}
+.address-link {
+  
+color: var(--SLATE, #434455);
+font-size: 16px;
+font-weight: 400;
+line-height: 150%; 
+letter-spacing: 0.32px;
+text-decoration: none;
+}
+.address-link:hover,
+.address-link:focus{
+    color: var(--brand-color );
+}
+
+.hero-title{
+color: var(--WHITE, #FFF);
+font-size: 56px;
+font-weight: 700;
+line-height: 107.143%; 
+letter-spacing: 1.12px;
+
+}
+
+.button-style{
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: var(--IRIS, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.button-style:hover,
+.button-style:focus{
+    color: var(--brand-color);
+}
+.subtitle{
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 111.111%; 
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.secondary-title{
+    color: var(--dark-color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    letter-spacing: 0.4px;
+}
+.paragraf{
+    color: var(--SLATE, #434455);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    letter-spacing: 0.32px;
+}
+.img-info{
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
+}
+
+.button-all{
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    background: var(--OCEAN, #404BBF);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
+}
+.button-info{
+    color: var(--IRIS, #4D5AE5);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--CLOUD, #F4F4FD);
+    }
+    
