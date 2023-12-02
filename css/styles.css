@@ -2,140 +2,191 @@
 /* pentru ca sa avem o culoare in spate la text ,subliniat ,folosim: .test{color:x} pentru CSS si in html punem test in selectorul de clasa, 
 ex. <p class="paragraf1 test>"*/
 :root{
-    --brand-color:orange;
+    --brand-color:#404bbf;
     --dark-color:#2E2F42;
     --text-font-family:"Roboto",sans-serif;
 }
 body{
-    color: #050505;
-    background-color: #c3c1c1;
+    color: #434455;
+    background-color:var(--WHITE,#FFFFFFFF) ;
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     
 }
-
+/* header of the page */
 .header-container{
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #ffffff);
    
    
 }
-.navigation-logo{
-    color: var(--dark-color);
+/* logo */
+.logo-link{
+    color: var(--IRIS, #4D5AE5);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
-    line-height: 116.667%; 
-    letter-spacing: 0.54px;
+    line-height: 1.17; 
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
-  
+    width: 71px;
 }
-.navigation-logo:hover,
-.navigation-logo:focus{
-    color: var(--brand-color);
-}
-.logo-info{
-    color: var(--IRIS, #4D5AE5);
-    text-decoration: none;
-    
-}
-.logo-info:hover,
-.logo-info:focus{
-    color: var(--brand-color);
 
+.logo-info{
+    color: var(--NAVY-BLUE, #2E2F42);
+    width: 44px;
+}  
+.link{
+    text-decoration: none;
 }
-.ul-style{
+/* list links */
+.list{
     list-style-type: none;
 }
-.navigation-link{
+.list-link{
     color: var(--dark-color);
     font-size: 16px;
     font-weight: 500;
-    line-height: 150%; 
-    letter-spacing: 0.32px;
-    text-decoration: none;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+   
 }
 
-.navigation-link:hover,
-.navigation-link:focus{
+.list-link:hover,
+.list-link:focus{
     color: var(--brand-color);
+}
+/* address container */
+.address-container{
+    font-style: normal;
 }
 .address-link {
   
 color: var(--SLATE, #434455);
 font-size: 16px;
 font-weight: 400;
-line-height: 150%; 
-letter-spacing: 0.32px;
-text-decoration: none;
+line-height: 1.5; 
+letter-spacing: 0.02em;
+
 }
 .address-link:hover,
 .address-link:focus{
     color: var(--brand-color );
 }
-
+/* main of the page */
+.hero-section{
+    background-color: #2e2f42;
+}
+/* main title */
 .hero-title{
-color: var(--WHITE, #FFF);
+color: var(--WHITE, #fffefe);
 font-size: 56px;
 font-weight: 700;
 line-height: 107.143%; 
-letter-spacing: 1.12px;
-
+letter-spacing: 0.02em;
+text-align: center;
+width: 496px;
 }
-
+/* button */
 .button-style{
+    color: #FFF;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    letter-spacing: 0.04em;
+    line-height: 1.5;
     display: inline-flex;
     padding: 16px 32px;
-    align-items: flex-start;
-    gap: 10px;
     border-radius: 4px;
     border: 1px solid #000;
     background: var(--IRIS, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    
+   
 }
 .button-style:hover,
 .button-style:focus{
     color: var(--brand-color);
+    background: var(--IRIS, #404bbf);
 }
+/*all sections */
 .subtitle{
     color: var(--dark-color);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 111.111%; 
-    letter-spacing: 0.72px;
+    line-height: 1.11; 
+    letter-spacing: 0.02em;
     text-transform: capitalize;
+    
+}
+.list-box{
+    border: 1px solid #000;
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 .secondary-title{
     color: var(--dark-color);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%; 
-    letter-spacing: 0.4px;
+    line-height: 1.2; 
+    letter-spacing: 0.04em;
+    width: 264px;
 }
 .paragraf{
     color: var(--SLATE, #434455);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; 
-    letter-spacing: 0.32px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    width: 264px;
 }
 .img-info{
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
 }
-
+.team-section{
+    background-color: #F4F4FD;
+}
+.list-info{
+    background-color: #FFFFFFFF
+}
+/* footer */
+.footer-container{
+    background-color: #2e2f42;
+}
+.footer-logo{
+    color: var(--IRIS, #f4f4f4fd);
+    
+}
+.footer-paragraf{
+    color: var(--CLOUD, #F4F4FD);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    width: 264px;
+}
+.footer-list{
+    color: var(--CLOUD, #F4F4FD); 
+    text-decoration: none;
+}
+/* portfolio */
 .button-all{
     color: var(--WHITE, #FFF);
     text-align: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; 
+    line-height: 1.5; 
     letter-spacing: 0.64px;
     border-radius: 4px;
     background: var(--OCEAN, #404BBF);
