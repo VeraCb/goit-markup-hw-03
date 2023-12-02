@@ -56,7 +56,7 @@ body{
     color: var(--brand-color);
 }
 /* address container */
-.address-style{
+.address-container{
     font-style: normal;
 }
 .address-link {
