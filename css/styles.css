@@ -29,11 +29,9 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-
 .logo-info{
     color: var(--NAVY-BLUE, #2E2F42);  
 }
-
 .link{
     text-decoration: none;
 }
@@ -49,7 +47,6 @@ body{
     letter-spacing: 0.02em;
 
 }
-
 .list-link:hover,
 .list-link:focus{
     color: var(--brand-color);
@@ -95,8 +92,6 @@ body{
     line-height: 1.5;
     background: var(--IRIS, #4D5AE5);
     cursor: pointer;
-    
-   
 }
 .button-style:hover,
 .button-style:focus{
@@ -111,8 +106,7 @@ body{
     font-weight: 700;
     line-height: 1.11; 
     letter-spacing: 0.02em;
-    text-transform: capitalize;
-    
+    text-transform: capitalize; 
 }
 .list-box{
     border: 1px solid #000;
@@ -156,7 +150,6 @@ body{
 .second-logo{
     color: #F4F4FD; 
 }
-
 .footer-list{
     color: var(--OCEAN, #F4F4FD); 
     text-decoration: none;
@@ -172,8 +165,7 @@ body{
     line-height: 1.5; 
     letter-spacing: 0.04em;
     background: var(--CLOUD, #F4F4FD);
-    cursor: pointer;
-   
+    cursor: pointer; 
 }
 .button-info:hover,
 .button-info:focus{
