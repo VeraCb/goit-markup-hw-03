@@ -15,7 +15,6 @@ body{
 }
 /* header of the page */
 .header-container{
-    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #ffffff);
    
    
@@ -83,7 +82,7 @@ body{
     line-height: 107.143%; 
     letter-spacing: 0.02em;
     text-align: center;
-    width: 496px;
+   
 }
 /* button */
 .button-style{
@@ -94,7 +93,6 @@ body{
     line-height: 24px; 
     letter-spacing: 0.04em;
     line-height: 1.5;
-    border: 1px solid #000;
     background: var(--IRIS, #4D5AE5);
     cursor: pointer;
     
@@ -156,7 +154,7 @@ body{
     background-color: #2e2f42;
 }
 .second-logo{
-    color: #f4f4f4fd; 
+    color: #F4F4FD; 
 }
 
 .footer-list{
