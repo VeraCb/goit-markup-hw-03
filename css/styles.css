@@ -2,9 +2,9 @@
 /* pentru ca sa avem o culoare in spate la text ,subliniat ,folosim: .test{color:x} pentru CSS si in html punem test in selectorul de clasa, 
 ex. <p class="paragraf1 test>"*/
 :root{
-    --brand-color:#404bbf;
-    --dark-color:#2E2F42;
-    --text-font-family:"Roboto",sans-serif;
+    --brand-color: #404bbf;
+    --dark-color: #2E2F42;
+    --text-font-family: "Roboto",sans-serif;
 }
 body{
     color: #434455;
