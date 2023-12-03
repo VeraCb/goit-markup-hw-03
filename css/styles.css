@@ -4,7 +4,7 @@ ex. <p class="paragraf1 test>"*/
 :root{
     --brand-color: #404bbf;
     --dark-color: #2E2F42;
-    --text-font-family: "Roboto",sans-serif;
+    --text-font-family: 'Roboto', sans-serif;
 }
 body{
     color: #434455;
