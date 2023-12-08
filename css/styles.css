@@ -16,7 +16,7 @@ body{
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif; 
 }
-.app-wrapper{
+.app-container{
    
     width: 1200px;
     height: auto;
@@ -28,7 +28,7 @@ body{
     width: 1200px;
     height: 72px;
     border-bottom: 1px;
-    border-bottom: ridge;
+    border-bottom: 1px ridge;
     display: flex;
     justify-content: space-between;
    
@@ -55,7 +55,7 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     width: 44px;
-    height: 21px;
+    height: auto;
     padding: 18px 0 18px 18px;
     
 }
@@ -115,11 +115,13 @@ body{
 /* main of the page */
 .hero-section{
     background-color: #2e2f42;
-    width: 1200px;
-    height: 600px;
+    padding-top: 94px ;
     margin-top: 43px;
 }
 /* main title */
+.hero-div{
+    padding: 80px 100px 230px 100px;
+}
 .hero-title{
     color: #ffffff;
     font-size: 56px;
@@ -132,8 +134,8 @@ body{
 
     width: 496px;
     border: 1px;
-    padding-top: 188px;
-    margin-left: 320px;
+    padding-top: 88px;
+    margin-left: 250px;
 }
 /* button */
 .button-style{
@@ -148,7 +150,7 @@ body{
     cursor: pointer;
     padding:16px 32px 16px 32px;
     border-radius: 4px;
-    margin-left: 470px;
+    margin-left: 400px;
     margin-top: 48px;
 }
 .button-style:hover,
@@ -181,7 +183,8 @@ body{
     font-weight: 500;
     line-height: 1.2; 
     letter-spacing: 0.02em;
-    margin-top: 32px;
+    padding: 20px;
+
 }
 .list-container{
     margin-left: -3.5px;
@@ -252,7 +255,14 @@ margin-left: 66px;
     text-decoration: none;
 
 }
+
+
 /* portfolio */
+.main-title{
+    padding: 24px;
+    
+}
+
 .button-info{
     color: var(--WHITE, #4d5ae5);
     font-family: "Roboto",sans-serif;
