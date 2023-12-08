@@ -3,37 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   
   <link rel="stylesheet"  href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="./css/styles.css">
-
+  <title>Studio</title>
 </head>
 
 <body>
+  <div class="app-wrapper">
   <!-- header container -->
   <header class="header-container">
-
-<nav class="navigation">
+    <!-- header div -->
+<div class="header-section">
+<nav class="navigation-container">
   <!-- navigation logo /logo-info-->
   <a href="./index.html" class="logo-link link">Web<span class="logo-info">Studio</span>
    </a>
-    
+    <div class="menu-section">
   <ul class="list">
     <li>
       <!-- navigation link -->
-      <a class="list-link link" href="./index.html">Studio</a>
+      <a class="list-link link" href="./index.html" width="48">Studio</a>
     </li>
     <li>
-      <a class="list-link link" href="./portfolio.html">Portfolio</a>
+      <a class="list-link link" href="./portfolio.html" width="66">Portfolio</a>
     </li>
     <li>
-      <a class="list-link link" href="">Contacts</a>
+      <a class="list-link link" href="" width="67">Contacts</a>
     </li>
   </ul>
+</div>
 </nav>
 <!-- address container -->
   <address class="address-container">
@@ -41,14 +45,14 @@
     <ul class="list">
       <li>
         <!--  address link-->
-    <a href="mailto:info@devstudio.com" class="address-link link">info@devstudio.com</a>
+    <a href="mailto:info@devstudio.com" class="address-link link" width="153">info@devstudio.com</a>
   </li>
   <li>
-    <a href="tel:+110001111111" class="address-link link">+11 (000) 111-11-11</a>
+    <a href="tel:+110001111111" class="address-link link" width="151">+11 (000) 111-11-11</a>
   </li>
   </ul>
   </address>
-
+</div>
   </header>
   <!-- main of the page -->
   <main>
@@ -60,10 +64,12 @@
   </h1>
   <button type="button" class="button-style">Order Service</button>
 </section>
+
  <!-- description section 1-->
+
   <section >
-   
     <h2 class="subtitle">Our skills</h2>
+    <div class="list-container">
    <ul class="list">
     <li class="list-box">
 <h3 class="secondary-title">Strategy</h3>
@@ -82,10 +88,14 @@
       <p class="paragraf">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
     </li>
     </ul> 
+  </div>
   </section>
+
   <!--  section 2 -->
+
 <section>
   <h2 class="subtitle">What are we doing</h2>
+  <div class="list-container">
   <ul class="list">
     <li class="img-info">
       <img src="./images/img-1.jpg" alt="computer" width="360" height="300">
@@ -97,42 +107,50 @@
       <img src="./images/img-3.jpg" alt="phone" width="360" height="300">
     </li>
   </ul>
+</div>
 </section>
+
 <!-- section 3  -->
+
 <section class="team-section">
-  
   <h2 class="subtitle">Our Team</h2>
+  <div class="list-container">
   <ul class="list">
     <li class="list-info">
       <img src="./images/img.jpg" alt="Mark Guerrero" width="264" height="260" >
       <h3 class="secondary-title">Mark Guerrero</h3>
-      <p class="paragraf">Product Designer</p>
+      <p class="paragraf p-career">Product Designer</p>
       
     </li>
     <li class="list-info">
       <img src="./images/img1.jpg" alt="Tom Ford" width="264" height="260">
       <h3 class="secondary-title">Tom Ford</h3>
-      <p class="paragraf">Frontend Developer</p>
+      <p class="paragraf p-career">Frontend Developer</p>
     </li>
     <li class="list-info">
       <img src="./images/img2.jpg" alt="Camila Garcia" width="264" height="260">
       <h3 class="secondary-title">Camila Garcia</h3>
-      <p class="paragraf">Marketing</p>
+      <p class="paragraf p-career">Marketing</p>
     </li>
     <li class="list-info">
       <img src="./images/img3.jpg" alt="Daniel Wilson" width="264" height="260">
       <h3 class="secondary-title">Daniel Wilson</h3>
-      <p class="paragraf">UI Designer</p>
+      <p class="paragraf p-career">UI Designer</p>
     </li>
   </ul>
+</div>
 </section>
   </main>
-  <!-- footer -->
-  <footer class="footer-container">
-    <a href="./index.html" class="logo-link link">Web<span class="second-logo">Studio</span></a>
 
+  <!-- footer -->
+
+  <footer class="footer-container">
+        <div class="logo-div">
+    <a href="./index.html" class="logo-link link">Web<span class="second-logo">Studio</span></a>
+  </div>
       <p class="last-paragraf">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
       <address>
+        <div class="contact-div">
         <ul class="list">
           <li>
             <a href="mailto:info@devstudio.com" class="address-link footer-list">info@devstudio.com</a>
@@ -141,9 +159,9 @@
         <a href="tel:+110001111111" class="address-link footer-list">+11 (000) 111-11-11</a>
       </li>
       </ul>
+    </div>
       </address>
-    
-    
   </footer>
+</div>
 </body>
 </html>

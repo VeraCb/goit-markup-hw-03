@@ -6,17 +6,44 @@ ex. <p class="paragraf1 test>"*/
     --dark-color: #2E2F42;
     --text-font-family: 'Roboto', sans-serif;
 }
+* {
+    margin: 0;
+     box-sizing: border-box; 
+  }
 body{
     color: #434455;
     background-color:var(--WHITE,#FFFFFFFF) ;
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif; 
 }
+.app-wrapper{
+   
+    width: 1200px;
+    height: auto;
+    margin: 4px;
+}
 /* header of the page */
 .header-container{
     background: var(--WHITE, #ffffff);
+    width: 1200px;
+    height: 72px;
+    border-bottom: 1px;
+    border-bottom: ridge;
+    display: flex;
+    justify-content: space-between;
    
-   
+}
+.header-section{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+    margin-left: 60px;
+}
+.navigation-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 /* logo */
 .logo-link{
@@ -27,9 +54,15 @@ body{
     line-height: 1.17; 
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    width: 44px;
+    height: 21px;
+    padding: 18px 0 18px 18px;
+    
 }
 .logo-info{
-    color: var(--NAVY-BLUE, #2E2F42);  
+    color: var(--NAVY-BLUE, #2E2F42); 
+    width: 71px;
+    padding: 18px 18px 18px 0; 
 }
 .link{
     text-decoration: none;
@@ -37,6 +70,9 @@ body{
 /* list links */
 .list{
     list-style: none;
+    display: flex;
+    gap: 24px;
+    flex-direction: row; 
 }
 .list-link{
     color: var(--dark-color);
@@ -44,15 +80,25 @@ body{
     font-weight: 500;
     line-height: 1.5; 
     letter-spacing: 0.02em;
-
+    padding: 16px;
 }
 .list-link:hover,
 .list-link:focus{
     color: var(--brand-color);
 }
+/* menu section */
+.menu-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-left: 55px;
+}
 /* address container */
 .address-container{
     font-style: normal;
+    display: flex;
+    margin-left: 120px;
 }
 .address-link {
     color: var(--SLATE, #434455);
@@ -60,7 +106,7 @@ body{
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
-
+    padding: 16px;
 }
 .address-link:hover,
 .address-link:focus{
@@ -69,6 +115,9 @@ body{
 /* main of the page */
 .hero-section{
     background-color: #2e2f42;
+    width: 1200px;
+    height: 600px;
+    margin-top: 43px;
 }
 /* main title */
 .hero-title{
@@ -78,7 +127,13 @@ body{
     line-height: 107.143%; 
     letter-spacing: 0.02em;
     text-align: center;
-   
+    font-weight: bold;
+    line-height: 60px;
+
+    width: 496px;
+    border: 1px;
+    padding-top: 188px;
+    margin-left: 320px;
 }
 /* button */
 .button-style{
@@ -91,11 +146,15 @@ body{
     line-height: 1.5;
     background: var(--IRIS, #4D5AE5);
     cursor: pointer;
+    padding:16px 32px 16px 32px;
+    border-radius: 4px;
+    margin-left: 470px;
+    margin-top: 48px;
 }
 .button-style:hover,
 .button-style:focus{
-    color: var(--brand-color);
-    background: var(--IRIS, #404bbf);
+    color: var(--WHITE, #ffffff);
+    background: var(--OCEAN, #404BBF);
 }
 /*all sections */
 .subtitle{
@@ -106,31 +165,49 @@ body{
     line-height: 1.11; 
     letter-spacing: 0.02em;
     text-transform: capitalize; 
+    padding: 36px;
+    border: 40px;
+    margin-top: 120px; 
 }
 .list-box{
     border: 1px solid #000;
+    width: 264px;
 }
 .secondary-title{
     color: var(--dark-color);
+    text-align: center;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2; 
     letter-spacing: 0.02em;
+    margin-top: 32px;
+}
+.list-container{
+    margin-left: -3.5px;
 }
 .paragraf{
     color: var(--SLATE, #434455);
+    font-family: "Roboto",sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
 }
+.p-career{
+    text-align: center;
+}
+
 .last-paragraf{
     color: var(--CLOUD, #F4F4FD);
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    height: 72px;
+    margin-top: 3px;
+    margin-left: 100px;
 }
 .img-info{
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -138,20 +215,42 @@ body{
 }
 .team-section{
     background-color: #F4F4FD;
+    width: 1200px;
+    height: 732px;
 }
 .list-info{
     background-color: #FFFFFFFF;
+    margin-top: 72px;
+    margin-bottom: 120px;
+    padding-bottom: 32px;
+    border-radius: 0 0 4px 4px;
 }
 /* footer */
 .footer-container{
     background-color: #2e2f42;
+    width: 1200px;
+    height: 312px;
+    
+}
+
+.logo-div{
+padding: 60px 20px 15px 20px;
+margin-top: 100px;
+margin-left: 66px;
+
 }
 .second-logo{
     color: #F4F4FD; 
 }
+.contact-div{
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
 .footer-list{
     color: var(--OCEAN, #F4F4FD); 
     text-decoration: none;
+
 }
 /* portfolio */
 .button-info{
