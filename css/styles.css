@@ -212,8 +212,7 @@ body{
 .box-list{
     border: 1px solid #000;
 
-    width:100%;
-    min-width: 264px;
+    flex-basis: calc((100% - 72px) / 4);
 }
 .secondary-title{
     color: var(--dark-color);
