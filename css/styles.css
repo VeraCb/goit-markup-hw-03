@@ -28,7 +28,7 @@ body{
     width: 1200px;
     height: 72px;
     border-bottom: 1px;
-    border-bottom: 1px ridge;
+    border-bottom: 1px solid #e7e9fc;
     display: flex;
     justify-content: space-between;
    
@@ -40,10 +40,15 @@ body{
     flex-direction: row;
     margin-left: 60px;
 }
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .navigation-container{
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
 }
 /* logo */
 .logo-link{
@@ -57,6 +62,7 @@ body{
     width: 44px;
     height: auto;
     padding: 18px 0 18px 18px;
+    margin-right: 76px;
     
 }
 .logo-info{
@@ -66,13 +72,20 @@ body{
 }
 .link{
     text-decoration: none;
+    padding: 24px 0;
 }
 /* list links */
 .list{
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 40px;
     flex-direction: row; 
+}
+.studio{
+    margin-right: 40px;
+}
+.contacts{
+    margin-right: 0;
 }
 .list-link{
     color: var(--dark-color);
@@ -80,7 +93,7 @@ body{
     font-weight: 500;
     line-height: 1.5; 
     letter-spacing: 0.02em;
-    padding: 16px;
+    
 }
 .list-link:hover,
 .list-link:focus{
@@ -89,16 +102,18 @@ body{
 /* menu section */
 .menu-section{
     display: flex;
+    gap: 40px;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    margin-left: 55px;
+    
 }
 /* address container */
 .address-container{
     font-style: normal;
     display: flex;
-    margin-left: 120px;
+    gap: 40px;
+    
 }
 .address-link {
     color: var(--SLATE, #434455);
@@ -106,7 +121,7 @@ body{
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
-    padding: 16px;
+    
 }
 .address-link:hover,
 .address-link:focus{
@@ -115,12 +130,16 @@ body{
 /* main of the page */
 .hero-section{
     background-color: #2e2f42;
-    padding-top: 94px ;
+    padding: 188px 0;
     margin-top: 43px;
+   
 }
 /* main title */
 .hero-div{
-    padding: 80px 100px 230px 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 .hero-title{
     color: #ffffff;
@@ -132,10 +151,9 @@ body{
     font-weight: bold;
     line-height: 60px;
 
-    width: 496px;
+    max-width: 496px;
     border: 1px;
-    padding-top: 88px;
-    margin-left: 250px;
+  
 }
 /* button */
 .button-style{
@@ -149,31 +167,41 @@ body{
     background: var(--IRIS, #4D5AE5);
     cursor: pointer;
     padding:16px 32px 16px 32px;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     border-radius: 4px;
-    margin-left: 400px;
-    margin-top: 48px;
+    margin-top: 48px; 
+ 
 }
 .button-style:hover,
 .button-style:focus{
     color: var(--WHITE, #ffffff);
     background: var(--OCEAN, #404BBF);
 }
-/*all sections */
-.subtitle{
-    color: var(--dark-color);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11; 
-    letter-spacing: 0.02em;
-    text-transform: capitalize; 
-    padding: 36px;
-    border: 40px;
-    margin-top: 120px; 
+/*section 2 */
+.skills-section{
+    padding: 120px 0;
 }
+.skills-container{
+    border: 1px;
+    width: 100%;
+    min-width: 264px;
+    margin: 0;
+}
+.skills-title{
+    visibility: hidden;
+}
+.skills-list{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
 .list-box{
     border: 1px solid #000;
-    width: 264px;
+    flex-basis: calc((100% - 72px) / 4);
 }
 .secondary-title{
     color: var(--dark-color);
@@ -183,13 +211,10 @@ body{
     font-weight: 500;
     line-height: 1.2; 
     letter-spacing: 0.02em;
-    padding: 20px;
+    margin-bottom: 8px;
 
 }
-.list-container{
-    margin-left: -3.5px;
-}
-.paragraf{
+.skills-paragraf{
     color: var(--SLATE, #434455);
     font-family: "Roboto",sans-serif;
     font-size: 16px;
@@ -198,28 +223,51 @@ body{
     line-height: 1.5; 
     letter-spacing: 0.02em;
 }
-.p-career{
-    text-align: center;
+/* section 3 */
+.img-section{
+    padding-bottom: 120px;
 }
-
-.last-paragraf{
-    color: var(--CLOUD, #F4F4FD);
-    font-style: normal;
-    line-height: 1.5;
+.img-container{
+    margin-left: -20px;
+    width: 100%;
+    min-width: 264px;
+}
+.subtitle{
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; 
     letter-spacing: 0.02em;
-    width: 264px;
-    height: 72px;
-    margin-top: 3px;
-    margin-left: 100px;
+    text-transform: capitalize; 
+    padding: 36px; 
+    border: 40px; 
+    margin-bottom: 72px; 
+    
+}
+.list-img{
+   list-style: none;
+   display: flex;
+   gap: 24px;
+    
 }
 .img-info{
-    border: 1px solid var(--CORNFLOWER, #E7E9FC);
-    background: url(<path-to-image>), lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
+    width: calc((100% - 48px) / 3);
 }
+/* section 4 */
 .team-section{
     background-color: #F4F4FD;
-    width: 1200px;
-    height: 732px;
+    padding-bottom: 120px;
+}
+.list-container{
+    margin-left: -20px;
+    width: 100%;
+    min-width: 264px;
+}
+.team-list{
+    list-style: none;
+    display: flex;
+    gap: 24px;
 }
 .list-info{
     background-color: #FFFFFFFF;
@@ -227,27 +275,55 @@ body{
     margin-bottom: 120px;
     padding-bottom: 32px;
     border-radius: 0 0 4px 4px;
+    width: calc((100% - 72px) / 4);
 }
+.name-post-div{
+    padding: 32px 0;
+}
+.p-career{
+    color: var(--SLATE, #434455);
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
 /* footer */
 .footer-container{
     background-color: #2e2f42;
     width: 1200px;
     height: 312px;
+    padding: 100px 0;
     
 }
 
 .logo-div{
 padding: 60px 20px 15px 20px;
-margin-top: 100px;
+margin-top: -60px;
+margin-bottom: 16px;
 margin-left: 66px;
+display: inline-block;
 
 }
 .second-logo{
     color: #F4F4FD; 
 }
+.footer-paragraf{
+    color: var(--CLOUD, #F4F4FD);
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 264px;
+    height: 72px;
+    margin-left: 82px;
+    max-width: 264px
+}
 .contact-div{
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 20px;
 }
 .footer-list{
