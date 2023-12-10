@@ -355,6 +355,10 @@ img{
     padding-top: 96px;
     padding-bottom: 120px;
 }
+.main-div{
+    padding: 0;
+    margin-left: 20px;
+}
 .button-list{
     list-style: none;
     display: flex;
