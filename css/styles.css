@@ -209,10 +209,9 @@ body{
     gap: 24px;
 }
 
-.box-list{
+li.box-list{
     border: 1px solid #000;
-
-    flex-basis: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 .secondary-title{
     color: var(--dark-color);
