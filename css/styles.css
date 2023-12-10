@@ -201,7 +201,7 @@ body{
 
 .list-box{
     border: 1px solid #000;
-    flex-basis: calc((100% - 72px) / 4);
+    width: calc(100% - 72px) / 4;
 }
 .secondary-title{
     color: var(--dark-color);
@@ -252,12 +252,12 @@ body{
     
 }
 .img-info{
-    width: calc((100% - 48px) / 3);
+    width: calc(100% - 48px) / 3;
 }
 /* section 4 */
 .team-section{
     background-color: #F4F4FD;
-    padding-bottom: 120px;
+    padding-bottom: 120px 0;
 }
 .list-container{
     margin-left: -20px;
@@ -275,7 +275,7 @@ body{
     margin-bottom: 120px;
     padding-bottom: 32px;
     border-radius: 0 0 4px 4px;
-    width: calc((100% - 72px) / 4);
+    width: calc(100% - 72px) / 4;
 }
 .name-post-div{
     padding: 32px 0;
@@ -300,13 +300,14 @@ body{
     
 }
 
-.logo-div{
-padding: 60px 20px 15px 20px;
-margin-top: -60px;
-margin-bottom: 16px;
-margin-left: 66px;
-display: inline-block;
-
+.footer-link{
+    text-decoration: none;
+    padding: 24px 0;
+    padding: 60px 20px 15px 20px;
+    margin-top: -60px;
+    margin-bottom: 16px;
+    margin-left: 66px;
+    display: inline-block;
 }
 .second-logo{
     color: #F4F4FD; 
