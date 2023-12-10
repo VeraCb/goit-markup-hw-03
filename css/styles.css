@@ -174,9 +174,7 @@ body{
     background: var(--OCEAN, #404BBF);
 }
 /*section 2 */
-.all-sections{
-    padding: 94px 0 94px 0;
-}
+
 .skills-section{
     padding: 120px 0;
 }
@@ -187,6 +185,7 @@ body{
 }
 .visually-hidden{
     position:absolute;
+    margin: -1px;
     width: 1px;
     height: 1px;
     border: 0;
@@ -202,7 +201,7 @@ body{
     gap: 24px;
 }
 
-li.box-list{
+.box-list{
     border: 1px solid #000;
     width: calc((100% - 72px) / 4);
 }
