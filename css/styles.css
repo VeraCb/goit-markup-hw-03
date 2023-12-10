@@ -20,7 +20,7 @@ body{
    
     width: 1200px;
     height: auto;
-    margin: 4px;
+    
 }
 /* header of the page */
 .header-container{
@@ -99,15 +99,7 @@ body{
 .list-link:focus{
     color: var(--brand-color);
 }
-/* menu section */
-/* .menu-section{
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
- 
-} */
+
 
 /* address container */
 .address-container{
@@ -182,6 +174,9 @@ body{
     background: var(--OCEAN, #404BBF);
 }
 /*section 2 */
+.all-sections{
+    padding: 94px 0 94px 0;
+}
 .skills-section{
     padding: 120px 0;
 }
@@ -189,13 +184,11 @@ body{
     border: 1px;
     width: 100%;
     min-width: 264px;
-    margin: 0;
 }
 .visually-hidden{
     position:absolute;
     width: 1px;
     height: 1px;
-    margin: -1px;
     border: 0;
     padding: 0;
     white-space: nowrap;
@@ -238,7 +231,7 @@ li.box-list{
     padding-bottom: 120px;
 }
 .img-container{
-    margin-left: -20px;
+   
     width: 100%;
     min-width: 264px;
 }
@@ -274,7 +267,6 @@ img{
     padding: 120px 0;
 }
 .list-container{
-    margin-left: -20px;
     width: 100%;
     min-width: 264px;
 }
@@ -289,7 +281,6 @@ img{
     margin-bottom: 120px;
     padding-bottom: 32px;
     border-radius: 0 0 4px 4px;
-
     width: calc((100% - 72px) / 4);
 }
 .name-post-div{
